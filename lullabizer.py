@@ -21,7 +21,7 @@ r.login(REDDIT_USERNAME, REDDIT_PASS)
 
 # Initially, we just put their most recent comment in a file
 # called previous.txt.
-user = r.get_redditor('')
+user = r.get_redditor(USER_TO_POST_TO)
 for comment in user.get_comments(limit=1):
     f = open( 'previous.txt', 'w' )
     f.write( repr(comment.body) )
