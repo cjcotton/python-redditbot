@@ -2,9 +2,10 @@
 
 This script is pretty straightfoward.
 
-In the config.py you will need to be sure to supply a username/password.
-In the actual lullabies.py script, you will need supply a user.
-(Yes, I could have just had a user read in from the config.py. Hush!)
+You will need to add the proper data to the creds.py or this wont work.
+
+You will have to supply an account to login with, and the user you are wanting to
+comment against.
 
 This script essentially reads a person's most recent comment into a text file.
 It then operates as, essentially, an endless loop (since we don't have a web server)
